@@ -1,1 +1,53 @@
-欢迎访问
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<mate http-equiv="Context-Type" content="text/html;charset=utf-8"/>
+	<title>个人主页</title>
+</head>
+<body>
+
+<div style="text-align: center;">
+
+	<h1>团结的力量</h1>
+	<br />
+
+	<video id="video1" width="540" height="320" style="">
+	<source src="111.mp4" type="video/mp4">
+	you browse not support video tag
+</video>
+<br />
+<button onclick="playPause()">播放/暂停</button>
+	<button onclick="makeBig()">大</button>
+	<button onclick="makeNormal()">中</button>
+	<button onclick="makeSmall()">小</button>
+
+</div>
+<br />
+<div class="copyright" style="text-align: center;margin-bottom:0px">Copyright © All Rights Reserved.</div>
+
+<script type="text/javascript">
+	
+	var myVideo = document.getElementById("video1");
+	function playPause(){
+		if (myVideo.paused) {
+			myVideo.play();
+		}else{
+			myVideo.pause();
+		}
+	}
+
+	function makeBig(){
+		myVideo.width="680"
+	}
+
+	function makeNormal(){
+		myVideo.width="540"
+	}
+
+	function makeSmall(){
+		myVideo.width="320"
+	}
+</script>
+</body>
+</html>
